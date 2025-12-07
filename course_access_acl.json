@@ -1,0 +1,37 @@
+[
+    {
+        "keyPrefix": "s3://careercoachassistant-css-bucket/restricted-courses/Medicine/",
+        "aclEntries": [
+            {
+                "Name": "CareerCoaches",
+                "Type": "GROUP",
+                "Access": "ALLOW"
+            }
+        ]
+    },
+    {
+        "keyPrefix": "s3://careercoachassistant-css-bucket/restricted-courses/Medicine/Medicine-Course-Catalog-A.pdf",
+        "aclEntries": [
+            {
+                "Name": "career.coach.one",
+                "Type": "USER",
+                "Access": "DENY"
+            },
+            {
+                "Name": "career.coach.two",
+                "Type": "USER",
+                "Access": "ALLOW"
+            }
+        ]
+    },
+    {
+        "keyPrefix": "s3://careercoachassistant-css-bucket/restricted-courses/Medicine/Medicine-Course-Catalog-B.pdf",
+        "aclEntries": [
+            {
+                "Name": "CareerCoaches",
+                "Type": "GROUP",
+                "Access": "ALLOW"
+            }
+        ]
+    }
+]
